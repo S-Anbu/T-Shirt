@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Details - T-Shirt Clothing</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background-color: #f44336;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main.container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+        }
+
+        .cart-item img {
+            max-width: 150px;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .cart-item h2 {
+            margin: 0;
+            color: #333;
+        }
+
+        .cart-item p {
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            background-color:#f44336;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>T-Shirt Clothing</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="latest-products.html">Latest Products</a></li>
+                    <li><a href="best-deals.html">Best Deals</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="cart-item">
+            <img src="https://media.istockphoto.com/id/1358422692/photo/dark-blue-3d-hq-rendered-t-shirt-with-detailed-and-texture-color.jpg?s=612x612&w=0&k=20&c=AWYhN8Kj26q-qXX0wtiOEJG218odk6ZUl1AIliHarZI=" alt="Product Image">
+            <div>
+                <h2>Item Added to Cart</h2>
+                <p>Your item has been successfully added to the cart.</p>
+                <a href="index.html" class="btn">Continue Shopping</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 T-Shirt Clothing. All rights reserved.</p>
+    </footer>
+</body>
+</html>

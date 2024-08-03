@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - T-Shirt Clothing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background: #f44336;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header .logo h1 {
+            margin: 0;
+        }
+
+        .header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .header nav ul li {
+            margin-left: 20px;
+        }
+
+        .header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.search button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #555;
+}
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .main {
+            margin: 20px 0;
+        }
+
+        .main h2 {
+            margin-top: 0;
+        }
+
+        .social-media {
+            margin-top: 20px;
+        }
+
+        .social-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            margin: 5px;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .social-button img {
+            width: 16px;
+            height: 16px;
+            margin-right: 8px; /* Space between image and text */
+        }
+
+        .social-button.facebook {
+            background-color: #3b5998;
+        }
+
+        .social-button.twitter {
+            background-color: black;
+        }
+
+        .social-button.instagram {
+            background-color: #c32aa3;
+        }
+
+        .social-button.google {
+            background-color: #db4437;
+        }
+
+        .social-button:hover {
+            opacity: 0.8;
+        }
+
+        .footer {
+            background: #f44336;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>T-Shirt Clothing</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="latest-products.html">Latest Products</a></li>
+                    <li><a href="best-deals.html">Best Deals</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="main">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Reach out to us with any questions or feedback.</p>
+
+            <h3>Email</h3>
+            <p>You can email us directly at <a href="mailto:info@example.com">info@example.com</a> for any inquiries. We aim to respond within 24-48 hours.</p>
+
+            <h3>Phone</h3>
+            <p>For immediate assistance, give us a call at (123) 456-7890. Our customer service team is available Monday through Friday, from 9 AM to 5 PM (EST).</p>
+
+            <h3>Address</h3>
+            <p>If you’d like to visit us or send us mail, our address is:</p>
+            <p>
+                123 T-Shirt Lane,<br>
+                Fashion City, FC 12345
+            </p>
+
+            <h3>Social Media</h3>
+            <p>Stay connected with us through our social media channels:</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank" class="social-button facebook">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                    Facebook
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="social-button twitter">
+                     <img src="data:image/png;base64,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" alt="Twitter" class="social-icon"> 
+                     Twitter
+                    </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-button instagram">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                    Instagram
+                </a>
+               
+                    <a href="https://www.google.com" target="_blank" class="social-button google">
+                        <img src="data:image/png;base64,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" alt="Google" class="social-icon"> 
+                        Google
+                    </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 T-Shirt Clothing. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now - T-Shirt Clothing</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color:#f44336;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+        }
+
+        .search input {
+            padding: 5px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+        }
+
+        .search button {
+            padding: 5px 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .search button:hover {
+            background-color: #555;
+        }
+
+        main.container {
+            padding: 20px;
+        }
+
+        h1, h2 {
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            width: calc(25% - 20px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-card p {
+            margin: 0;
+            padding: 10px;
+        }
+
+        .product-card .btn {
+            margin: 10px;
+            align-self: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            background-color:#f44336;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>T-Shirt Clothing</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="latest-products.html">Latest Products</a></li>
+                    <li><a href="best-deals.html">Best Deals</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Shop Now</h1>
+        <section class="section">
+            <h2>Featured Products</h2>
+            <div class="product-container">
+                <div class="product-card">
+                    <img src="https://media.istockphoto.com/id/1358422692/photo/dark-blue-3d-hq-rendered-t-shirt-with-detailed-and-texture-color.jpg?s=612x612&w=0&k=20&c=AWYhN8Kj26q-qXX0wtiOEJG218odk6ZUl1AIliHarZI=" alt="Product 1">
+                    <p>$29.99</p>
+                    <a href="product-details.html" class="btn">View Details</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://media.istockphoto.com/id/1358422707/photo/orchid-3d-hq-rendered-t-shirt-with-detailed-and-texture-color.jpg?s=612x612&w=0&k=20&c=1YYTrKt84ldMxLTpTyAzTG-Ovoy0BTMa1VIp6UaaBNQ=" alt="Product 2">
+                    <p>$39.99</p>
+                    <a href="product-details.html" class="btn">View Details</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://media.istockphoto.com/id/1358422697/photo/black-3d-hq-rendered-t-shirt-with-detailed-and-texture-color.jpg?s=612x612&w=0&k=20&c=t3ESc1U2mV0KL1DZAkhjrrcMYv0DChhtLkw2ggdHY-Q=" alt="Product 3">
+                    <p>$49.99</p>
+                    <a href="product-details.html" class="btn">View Details</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://media.istockphoto.com/id/1358422727/photo/red-3d-hq-rendered-t-shirt-with-detailed-and-texture-color.jpg?s=612x612&w=0&k=20&c=epnH8LwHJmsme18qyZbk3ca5HvqFg6mmkQW3WxsZhhY=" alt="Product 4">
+                    <p>$59.99</p>
+                    <a href="product-details.html" class="btn">View Details</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 T-Shirt Clothing. All rights reserved.</p>
+    </footer>
+</body>
+</html>
