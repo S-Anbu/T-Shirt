@@ -190,6 +190,9 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
 }
+.footer_space{
+    margin-bottom: 20px;
+}
 
 @media  screen and (max-width: 1144px) {
     .header .container {
@@ -276,10 +279,10 @@ nav ul li a:hover {
         padding: 15px;
     }
     .category-card > h3{
-        font-size: 13px;
+        font-size: 11px;
     }
     .category-card > a.btn{
-        font-size: 10px;
+        font-size: 7px;
         padding: 8px 5px ;
     }
     h2{
@@ -298,6 +301,34 @@ nav ul li a:hover {
         padding: 2px 6px;
         transition: color 0.3s ease;
     }
+    .sidebar{
+        /* display: none; */
+        width: 100%;
+        padding: 10px;  
+
+    }
+    .sidebar ul{
+        display: inline-flex;
+        font-size: 12px;
+        text-align: center;
+
+    }
+    .sidebar ul li a{
+        margin-right: 10px;
+    }
+    .sidebar h2{
+        font-size: 20px;  
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    section.main{
+        width: 100%;
+    }
+    .mobile_hidden{
+        display: none;
+    }
+
 }
 
 
