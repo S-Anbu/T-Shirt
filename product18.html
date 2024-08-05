@@ -6,45 +6,67 @@
     <title>Shop Now - T-Shirt Clothing</title>
     <style>
         /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+        /* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-        .header {
-            background-color:#f44336;
-            color: #fff;
-            padding: 10px 0;
-        }
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
 
-        .header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
+.header {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures header is on top of other content */
+}
 
-        .logo h1 {
-            margin: 0;
-        }
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
+.header .logo h1 {
+    margin: 0;
+}
 
-        nav ul li {
-            margin: 0 10px;
-        }
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
 
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .search {
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+.search {
     display: flex;
     align-items: center;
 }
@@ -55,6 +77,7 @@
     border-radius: 5px;
     border: 1px solid #ccc;
     margin-right: 10px;
+    width: 80%;
 }
 
 .search button {
@@ -70,66 +93,180 @@
     background-color: #555;
 }
 
-        main.container {
-            padding: 20px;
-        }
+main.container {
+    padding: 20px;
+    padding-top: 80px; /* Adjusted to account for fixed header */
+}
 
-        h1, h2 {
-            margin: 0;
-            padding: 10px 0;
-        }
+h1, h2 {
+    margin: 0;
+    padding: 10px 0;
+}
 
-        .section {
-            margin-bottom: 20px;
-        }
+.section {
+    margin-bottom: 20px;
+}
 
-        .product-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
-        .product-card {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            text-align: center;
-            width: calc(25% - 20px);
-        }
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    width: calc(25% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-        .product-card img {
-            max-width: 100%;
-            height: auto;
-        }
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
 
-        .product-card h3 {
-            margin: 10px 0 5px;
-        }
+.product-card p {
+    margin: 0;
+    padding: 10px;
+}
 
-        .product-card p {
-            margin: 0 0 10px;
-        }
+.product-card .btn {
+    margin: 10px;
+    align-self: center;
+}
 
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
-        .btn:hover {
-            background-color: #0056b3;
-        }
+.btn:hover {
+    background-color: #0056b3;
+}
 
-        .footer {
-            background-color:#f44336;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-          
-        }
+.footer {
+    background-color: #f44336;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1144px) {
+    .header .container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .header .logo h1 {
+        font-size: 25px;
+    }    
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 3px 6px;
+    }
+
+    .search input {
+        width: 70%;
+    }
+
+    .main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .header .container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .header .logo h1 {
+        font-size: 25px;
+    }
+
+    .search input {
+        width: 90%;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+        padding: 3px 6px;
+    }
+
+    .main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .product-card {
+        width: calc(50% - 20px);
+    }
+
+    .category-card {
+        padding: 15px;
+    }
+
+    .category-card > h3 {
+        font-size: 13px;
+    }
+
+    .category-card > a.btn {
+        font-size: 10px;
+        padding: 8px 5px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+        padding: 2px 6px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .product-card {
+        width: calc(100% - 20px);
+    }
+
+    .category-card {
+        padding: 15px;
+    }
+
+    .category-card > h3 {
+        font-size: 13px;
+    }
+
+    .category-card > a.btn {
+        font-size: 10px;
+        padding: 8px 5px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -148,10 +285,7 @@
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
-            <div class="search">
-                <input type="text" placeholder="Search...">
-                <button>Search</button>
-            </div>
+           
         </div>
     </header>
 
@@ -162,29 +296,45 @@
             <div class="product-container">
                 <div class="product-card">
                     <img src="https://media.istockphoto.com/id/1358422692/photo/dark-blue-3d-hq-rendered-t-shirt-with-detailed-and-texture-color.jpg?s=612x612&w=0&k=20&c=AWYhN8Kj26q-qXX0wtiOEJG218odk6ZUl1AIliHarZI=" alt="Product 1">
-                   
                     <p>$29.99</p>
                     <a href="product-details.html" class="btn">View Details</a>
                 </div>
 
                 <div class="product-card">
                     <img src="https://media.istockphoto.com/id/1358422707/photo/orchid-3d-hq-rendered-t-shirt-with-detailed-and-texture-color.jpg?s=612x612&w=0&k=20&c=1YYTrKt84ldMxLTpTyAzTG-Ovoy0BTMa1VIp6UaaBNQ=" alt="Product 2">
-                    
                     <p>$39.99</p>
                     <a href="product-details.html" class="btn">View Details</a>
                 </div>
 
                 <div class="product-card">
                     <img src="https://media.istockphoto.com/id/1358422697/photo/black-3d-hq-rendered-t-shirt-with-detailed-and-texture-color.jpg?s=612x612&w=0&k=20&c=t3ESc1U2mV0KL1DZAkhjrrcMYv0DChhtLkw2ggdHY-Q=" alt="Product 3">
-                   
                     <p>$49.99</p>
                     <a href="product-details.html" class="btn">View Details</a>
                 </div>
 
                 <div class="product-card">
                     <img src="https://media.istockphoto.com/id/1358422727/photo/red-3d-hq-rendered-t-shirt-with-detailed-and-texture-color.jpg?s=612x612&w=0&k=20&c=epnH8LwHJmsme18qyZbk3ca5HvqFg6mmkQW3WxsZhhY=" alt="Product 4">
-                   
                     <p>$59.99</p>
+                    <a href="product-details.html" class="btn">View Details</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://media.istockphoto.com/id/1358422711/photo/navy%093d-hq-rendered-t-shirt-with-detailed-and-texture-color.jpg?s=612x612&w=0&k=20&c=caEpaicPbHdZrbTuGIKc77nQVtI1BZ5vz7FQ3pDaM2s=" alt="Product 4">
+                    <p>$39.99</p>
+                    <a href="product-details.html" class="btn">View Details</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://media.istockphoto.com/id/1489602978/photo/navy-long-sleeve-ladies-polo-shirt-3d-rendering-back-and-front-side-view.jpg?s=612x612&w=0&k=20&c=4jYOFsh_aSMHG_qXmWBFjXQsElA3xphphwWwRfsx70E=" alt="Product 4">
+                    <p>$19.99</p>
+                    <a href="product-details.html" class="btn">View Details</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://media.istockphoto.com/id/1324164164/photo/short-sleeve-round-neck-t-shirt.jpg?s=612x612&w=0&k=20&c=-CmAJGTe7Dhx0haw5zjy1y3nJmR9xrJrTKlYH9zPRhU=" alt="Product 4">
+                    <p>$29.99</p>
+                    <a href="product-details.html" class="btn">View Details</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://media.istockphoto.com/id/1146175909/photo/orange-shirt-design-template.jpg?s=612x612&w=0&k=20&c=xF4WazPjBea0O5f4sYwyCz1utb-Z2CpgCCy1AX3rd78=" alt="Product 4">
+                    <p>$69.99</p>
                     <a href="product-details.html" class="btn">View Details</a>
                 </div>
             </div>
